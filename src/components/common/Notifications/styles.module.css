@@ -1,0 +1,21 @@
+.container {
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  z-index: 2000;
+}
+
+.row {
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  word-break: break-word;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}

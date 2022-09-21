@@ -1,0 +1,82 @@
+.container,
+.drawer {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: var(--color-background-paper);
+}
+
+.container {
+  width: 230px;
+  border-right: 1px solid var(--color-border-light);
+}
+
+.scroll {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - var(--header-height)); /* needed for scroll */
+}
+
+.drawer {
+  width: 400px;
+  max-width: 90vw;
+}
+
+.drawer {
+  text-align: center;
+  padding: var(--header-height) 0 0 0;
+  border-right: 1px solid var(--color-border-light);
+}
+
+.chain > * {
+  padding: 3px;
+}
+
+.noSafeHeader {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  min-height: 80px;
+  align-items: flex-start;
+}
+
+.drawerButton {
+  position: absolute !important;
+  z-index: 2;
+  right: 0;
+  transform: translateX(50%);
+  margin-top: 18px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  color: var(--color-secondary-main);
+  background-color: var(--color-border-light);
+}
+
+.drawerButton:hover {
+  background-color: var(--color-primary-background);
+}
+
+.drawerButton svg {
+  transform: translateX(-25%);
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding-top: var(--header-height);
+  }
+
+  .drawer {
+    max-width: 90vw;
+  }
+
+  .drawerButton {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+  }
+}

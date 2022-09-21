@@ -1,0 +1,35 @@
+.container {
+  padding: var(--space-2);
+}
+
+.safe {
+  display: flex;
+  gap: 12px;
+  text-align: left;
+  align-items: center;
+}
+
+.iconButtons {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.iconButton {
+  border-radius: 4px;
+  padding: 6px;
+  background-color: var(--color-border-background);
+  width: 32px;
+  height: 32px;
+}
+
+.iconButton:hover {
+  background-color: var(--color-primary-background);
+}
+
+.address {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
